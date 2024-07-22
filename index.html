@@ -1,0 +1,44 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafetyHQ Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SafetyHQ Task Tracker</h1>
+        <form id="task-form" data-netlify="true">
+            <div class="summary-row">
+                <div>Project</div>
+                <div>Task</div>
+                <div>Mon <span class="total-time" data-day="mon">0h 0m</span></div>
+                <div>Tues <span class="total-time" data-day="tues">0h 0m</span></div>
+                <div>Weds <span class="total-time" data-day="weds">0h 0m</span></div>
+                <div>Thurs <span class="total-time" data-day="thurs">0h 0m</span></div>
+                <div>Fri <span class="total-time" data-day="fri">0h 0m</span></div>
+                <div>Notes</div>
+                <div>Total Weekly Time</div>
+                <div></div>
+            </div>
+            <div class="task-row">
+                <input type="text" name="project" placeholder="Project">
+                <input type="text" name="task" placeholder="Task">
+                <input type="text" name="mon" placeholder="Mon">
+                <input type="text" name="tues" placeholder="Tues">
+                <input type="text" name="weds" placeholder="Weds">
+                <input type="text" name="thurs" placeholder="Thurs">
+                <input type="text" name="fri" placeholder="Fri">
+                <input type="text" name="notes" placeholder="Notes">
+                <input type="text" name="total-weekly-time" placeholder="Total Weekly Time" readonly>
+                <button type="button" class="add-task">+</button>
+            </div>
+        </form>
+        <button id="save-day">Save Day</button>
+        <button id="submit-week">Submit Week</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
